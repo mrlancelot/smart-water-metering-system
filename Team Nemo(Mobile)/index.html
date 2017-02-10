@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    
+<link rel="stylesheet" href="css/shuru.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="font-awesome-4.5.0\css\font-awesome.min.css">
+<link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script src="js/js.js"></script>
+      <script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+      <script>
+var myCenter=new google.maps.LatLng(18.5091579,73.8467025);
+var pos1=new google.maps.LatLng(18.5381756,73.832069); //shivajinagar toilet
+    var pos2=new google.maps.LatLng(18.5381756,73.832069); //sangamwadi toilet
+    var pos3=new google.maps.LatLng(18.5351904,73.8584016); // railwaystation
+    var pos4=new google.maps.LatLng(18.5850762,73.9177248); //airport
+    var pos5=new google.maps.LatLng(18.5549385,73.8318973); //pcmc toilet
+    var pos6=new google.maps.LatLng(18.530526,73.8325839); //wellesly road toilet
+    var pos7=new google.maps.LatLng(18.5365766,73.7836991); //PMC toilet
+    var pos8=new google.maps.LatLng(18.4893424,73.8361888); //katraj toilet
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+   
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+    
+var marker=new google.maps.Marker({
+  position:pos1,
+  });
+
+marker.setMap(map);
+
+var marker=new google.maps.Marker({
+  position:pos2,
+  });
+
+marker.setMap(map);    
+
+var marker=new google.maps.Marker({
+  position:pos3,
+  });
+
+marker.setMap(map);   
+var marker=new google.maps.Marker({
+  position:pos4,
+  });
+
+marker.setMap(map);  
+    var marker=new google.maps.Marker({
+  position:pos5,
+  });
+
+marker.setMap(map);   
+    var marker=new google.maps.Marker({
+  position:pos6,
+  });
+
+marker.setMap(map);   
+    
+     var marker=new google.maps.Marker({
+  position:pos7,
+  });
+
+marker.setMap(map);  
+    
+      
+     var marker=new google.maps.Marker({
+  position:pos8,
+  });
+
+marker.setMap(map); 
+    
+
+  //location  
+ var infoWindow = new google.maps.InfoWindow({map: map});
+
+  // Try HTML5 geolocation.
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
+
+      
+    var marker=new google.maps.Marker({
+  position:pos,
+         animation:google.maps.Animation.BOUNCE,
+  icon:'http://i.stack.imgur.com/orZ4x.png'
+  });
+
+        marker.setMap(map);
+      map.setCenter(pos);
+    }, function() {
+      handleLocationError(true, infoWindow, map.getCenter());
+    });
+  } else {
+    // Browser doesn't support Geolocation
+    handleLocationError(false, infoWindow, map.getCenter());
+  }    
+}
+
+
+    
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+}
+   
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    
+    
+</script>
+
+    
+</head>
+
+    
+    
+    
+<body style="overflow:hidden">
+
+    
+
+    
+    
+    <div id="mainback">
+       <div id="sun-small"><img src="./img/sun-small.svg" height="100%" width="auto"></img>           </div>
+    <div id="mount"><img src="./img/wrld1.svg" height="100%" width="auto"></img></div>
+           <div id="boat"><img src="./img/wooden-ship.svg" height="100%" width="auto"></img></div>
+           <div id="water"><img src="./img/water.svg" height="100%" width="auto"></img></div>
+           <div id="clouds" ><img src="./img/clouds.svg" height="100%" width="auto"></img></div>
+
+<div id="mem" class="" align="center"> Water
+        </div>
+    
+         <div id="foo" align="center" onclick="login()">
+             PROTOTYPE
+        </div>
+
+
+        <div id="login">
+
+                        <input type="text" placeholder="username" name="user" id="user"><br>
+                        <input type="password" placeholder="password" name="password" id="pass"><br>
+                        <input type="button" onclick="check()" value="Login" id="loginbtn" class="btn red">
+                </div>
+
+    </div>
+
+
+
+
+<div id="backed">
+                
+        <div id="top">
+            <i class="fa fa-bars fa-lg" onclick="link1()">
+            </i>
+            <div id="name" align="center"  onclick="ab()">Water</div>
+                        
+            <div class="icons">
+        <i class="fa fa-cog fa-lg" onclick="link1()"></i>
+        <i class="fa fa-bar-chart  fa-lg" onclick="link2()"></i>
+        <i class="fa fa-inbox fa-lg" onclick="link3()" ></i>
+        <i class="fa fa-battery-3  fa-lg" onclick="link4()"></i>
+    </div>
+            
+        </div>
+                
+                <div id="middle" >
+                    <div id="cir1" class="cir" onclick="link2()">
+                        <div class="bacche" id="b1">
+                            CHECK<br>FLOW
+                        </div>
+                        <div id="logos1">
+                            <img src="img/calculation.png" height="100%" width="auto">
+                        </div>
+                    </div>
+                    <div id="cir2" class="cir" onclick="link3()">
+                        <div class="bacche" id="b2">
+                            NOTIFY<br>PEOPLE
+                        </div>
+                        <div id="logos2">
+                            <img src="img/school-bell.png" height="100%" width="auto">
+                        </div>
+                    </div>
+                    <div id="cir3" class="cir" onclick="link4()">
+                        <div class="bacche" id="b3">
+                            MAP<br>TRACKING
+                        </div>
+                        <div id="logos3">
+                            <img src="img/i.png" height="100%" width="auto">
+                        </div>
+                    </div>
+                    <div id="cir4" class="cir" onclick="p()">
+                        <div class="bacche" id="b4">
+                            CONTACT<br>US    
+                        </div>
+                        <div id="logos4">
+                            <img src="img/phone-book.png" height="100%" width="auto">
+                        </div>
+                    </div>
+                </div>     
+                
+                
+                <div class="bottom"></div>
+                <div id="middle2">
+                    <div id="cir5" class="cir1" ><p id="fr1">FLOW</p><a id="fr">FLOW</a>
+                    </div>
+                    <div id="cir6" class="cir1" ><p id="upt1">UPTIME</p><a id="upt">UPTIME</a>
+                    </div>
+                    <div id="cir7" class="cir1" ><p id="vol1">VOLUME</p><a id="vol">VOLUME</a>
+                    </div>
+                    <div id="cir8" class="cir1" onclick="link1()" ><a id="back">BACK</a>
+                    </div>
+                </div>
+    
+                <div id="middle3">
+                    <div class="carded" id="c1"><p id="madman">	4450 water samples are checked every month to monitor disinfection.</p></div>div>
+                    <div class="carded" id="c2"><p id="madman">3000 water samples are collected every month for physical & 
+                        chemical analysis.</p></div>
+                    <div class="carded" id="c3"><p id="madman">WSS Department held Workshops to train the village personnel .</p></div>
+                    <div class="carded" id="c4"><p id="madman">	At present there is a central water testing laboratory at Patiala.</p></div>
+                    <div class="carded" id="c5"><p id="madman">	 Mobile lab helps in quickly identifying the water quality problem on the spot at site.</p></div>
+                    
+                    
+                    
+                    <div id="formed" >
+        
+    <form id = "form" name = "form" action="http://192.168.101.12/notifysend.php" method = "post" target="some_name">
+    <input type='text' name='name' id='name'  value="1" style="display:none;">
+    <input id="sente" class="btn" type='submit' value='Notify'  onclick="Materialize.toast('Your Request has been sent ', 4000)">
+    </form>
+        </div>
+                                           
+                    <a id="btnlive" class="btn" onclick="openlive()">Live</a>
+                    
+           
+                </div>
+
+ 
+                
+  <iframe id="some_name" name="some_name" style="display:none ; position:absulote; z-index:-100"></iframe>   
+            
+
+     <div id="live" >     
+             <i class="fa fa-close fa-lg" onclick="xlive()"></i>
+               <p id="new1"> Notifications:</p>
+                <p id="new">               
+                </p>
+        </div>
+    
+            <div id="middle4">
+                <div id="piped" >    
+        <div id="sub1">
+            <div id="sub1in">
+            </div>
+            <div id="block1"></div>
+       </div>
+       <div id="sub2">
+           <div id="sub2in"></div>
+       </div>
+       <div id="sub3">
+           <div id="sub3in"></div>
+       </div>
+       <div id="sub4">
+           <div id="sub4in"></div>
+       </div>
+     <div id='mainpipe'>
+         <div id="mainpipe1"></div>
+    </div>  
+    <div id="circout1"  >
+        <div id="circin1">
+        </div>
+    </div>
+    <div id="circout2">
+        <div id="circin2">
+        </div>
+    </div>
+    <div id="circout3">
+        <div id="circin3">
+        </div>
+    </div>
+    <div id="circout4">
+        <div id="circin4">
+        </div>
+    </div>
+     <div id="branch1">
+         <div id="branch1in"></div>
+    </div>
+    <div id="branch2">
+        <div id="branch2in"></div>
+    </div>
+    <div id="branch3">
+        <div id="branch3in"></div>
+    </div>
+    <div id="branch4">
+        <div id="branch4in"></div>
+    </div>
+    <div id="branch5">
+        <div id="branch5in"></div>
+    </div>
+    <div id="branch6">
+        <div id="branch6in"></div>
+    </div>
+    <div id="circout11">
+        <div id="circin11">
+        </div>
+    </div>
+    <div id="circout12">
+        <div id="circin12">
+        </div>
+    </div>
+    <div id="circout13">
+        <div id="circin13">
+        </div>
+    </div>
+    <div id="circout14">
+        <div id="circin14">
+        </div>
+    </div>
+    <div id="circout15">
+        <div id="circin15">
+        </div>
+    </div>
+    <div id="circout16">
+        <div id="circin16">
+        </div>
+        </div>
+ <div id="finalpipe" >
+    </div> 
+    </div>
+                
+           <a id="btn2" class="btn" onclick="l()" >Map</a>     
+ </div>
+    
+      
+       
+            <div id="nav" >     
+             <i class="fa fa-close fa-lg" onclick="x2()"></i>
+                
+                <p id="contact">CONTACT US <BR>
+                    <BR>OPERATOR 1<BR>
+                    PRIDHVI KRISHNA<BR>ARMY INSTITUTE OF TECHNOLOGY<BR>+91-7030311832<BR><BR>
+                    OPERATOR 2 <BR>
+                    SHUBHAM VERMA<BR>POSTER LELO<BR>+91-8806414881
+                
+                
+                </p>
+        </div>
+                        
+                        
+                        <div id="maped" >     
+             <i class="fa fa-close fa-lg" onclick="xl()"></i>
+                <div id="map">
+  
+
+<div id="googleMap" style="width:90%;height:80%;position:absolute;top:10%;left:5%;"></div>
+    
+   
+    </div>
+        </div>
+    </div> 
+
+     
+    
+	
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/materialize.js"></script>
+  </body>
+</html>
