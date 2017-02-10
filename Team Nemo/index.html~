@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Team AQUA</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hallooou.css" rel="stylesheet">
+    <link href="css/colors.css" rel="stylesheet">
+    <link href="css/colors_2.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/main.css" rel="stylesheet">
+   
+</head>
+
+<body id="home">
+    
+  
+      
+    <div id="background">
+<div id="team">SAVE<span>WATER</span></div>
+        <div class="boat">
+<div class="wrap">
+	<div class="main">
+		<div class="boat-top-layer">
+			<div class="top">
+				<div class="pole"></div>
+				<div class="help"><span></span></div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+		<div class="boat-mid-layer">
+			<div class="top"></div>
+			<div class="bottom"></div>
+		</div>
+		<div class="boat-bot-layer">
+			<div class="top"></div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+</div>
+<div class="water">
+	<div class="drops clearfix drops-1">
+		<span class="drop drop-a"></span>
+		<span class="drop drop-b"></span>
+		<span class="drop drop-c"></span>
+		<span class="drop drop-d"></span>
+		<span class="drop drop-e"></span>
+		<span class="drop drop-f"></span>
+		<span class="drop drop-g"></span>
+		<span class="drop drop-h"></span>
+	</div>
+	<div class="drops clearfix drops-2">
+		<span class="drop drop-a"></span>
+		<span class="drop drop-b"></span>
+		<span class="drop drop-c"></span>
+		<span class="drop drop-d"></span>
+		<span class="drop drop-e"></span>
+		<span class="drop drop-f"></span>
+		<span class="drop drop-g"></span>
+		<span class="drop drop-h"></span>
+	</div>
+</div>
+</div>
+    </div>
+    
+            <!-- Navigation -->
+            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header pull-left">
+                        <a class="navbar-brand page-scroll" href="#page-top">
+                            
+                        </a>
+                    </div>
+                    <div class="main-nav pull-right">
+                        <div class="button_container toggle">
+                            <span class="top"></span>
+                            <span class="middle"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="#about">Change View</a></li>
+                                <li><a href="#services">Notify People</a></li>
+                                <li><a href="#products">Check Reports</a></li>
+                                <li><a href="#team">Our Team</a></li>
+                                <li><a href="#portfolio">Update Data</a></li>
+                                <li><a href="#clients">Water Control System</a></li>
+                                <li><a href="#contact">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  
+   
+
+    <!-- Custom JavaScript -->
+    <script src="js/hallooou.js"></script>
+    
+    <div id="butlog"><a href="login.html" class="button2">LOG IN</a></div>
+      
+</body>
+
+</html>
